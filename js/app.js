@@ -33,28 +33,10 @@ function getBaiduDogs(degreeConf)
                 var degree = degreeConf[item.rareDegree] || {desc: '未知', buyAmount: 5};
                 var buyAmount = degree.buyAmount || 5;
                 if (parseFloat(item.amount) <= parseFloat(buyAmount)) {
-                    $.ajax({
-                        type: 'POST',
-                        url: apiTxnCreate,
-                        contentType : 'application/json',
-                        data: JSON.stringify({
-                            "petId":item.petId,
-                            "requestId": new Date().getTime(),
-                            "amount": item.amount,
-                            "appId":1,
-                            "tpl":""
-                        }),
-                        success:function(res2){
-                            console.log("尝试购买：ID["+item.id + "],级别[" + item.rareDegree + "],价格[" + item.amount + ']')
-                            console.log("命中策略：等级["+degree.desc + "],最高价格[" + degree.buyAmount + ']')
-                            if (res2.errorNo == 0) {
-                                console.log("抢到啦！！！！！")
-                            } else {
-                                console.log("没抢到：错误码[" + res2.errorNo + '],错误信息[' + res2.errorMsg + ']')
-                            }
-                        }
-                    });
+                    window.location.href = "https://pet-chain.baidu.com/chain/detail?channel=market&petId="
+					+ item.petId + "&validCode=" + item.validCode;
                 }
+               
             });
         }
     });

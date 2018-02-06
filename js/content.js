@@ -42,7 +42,7 @@ function run(){
 		console.log("start get dogs....\n")
 		setInterval(function(){
 			getBaiduDogs(degreeConf);
-		}, 3000);
+		}, 2000);
 
 	}); 
 	
