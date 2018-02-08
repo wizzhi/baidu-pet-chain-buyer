@@ -34,7 +34,7 @@ function getBaiduDogs(degreeConf)
                 var buyAmount = degree.buyAmount || 5;
                 if (parseFloat(item.amount) <= parseFloat(buyAmount)) {
                     window.location.href = "https://pet-chain.baidu.com/chain/detail?channel=market&petId="
-					+ item.petId + "&validCode=" + item.validCode;
+					+ item.petId + "&appId=1&validCode=" + item.validCode;
                 }
                
             });

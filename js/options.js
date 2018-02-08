@@ -1,27 +1,27 @@
 var options = {
     defaultDegreeConf: [{
         desc: '普通',
-        buyAmount: 100,
+        buyAmount: 1800,
         saleAmount: 0,
     },{
         desc: '稀有',
-        buyAmount: 100,
+        buyAmount: 1800,
         saleAmount: 0,
     },{
         desc: '卓越',
-        buyAmount: 100,
+        buyAmount: 1800,
         saleAmount: 0,
     },{
         desc: '史诗',
-        buyAmount: 100,
+        buyAmount: 1800,
         saleAmount: 0,
     },{
         desc: '神话',
-        buyAmount: 100,
+        buyAmount: 1800,
         saleAmount: 0,
     },{
         desc: '传说',
-        buyAmount: 100,
+        buyAmount: 1800,
         saleAmount: 0,
     }],
 	saveBgConfig : function(data) {
